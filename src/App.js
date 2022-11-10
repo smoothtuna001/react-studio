@@ -5,9 +5,9 @@ import BakeryItem from "./components/BakeryItem";
 import CartItem from "./components/CartItem";
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-// bakeryData.forEach((item) => {
-//   item.image = process.env.PUBLIC_URL + "/" + item.image;
-// });
+bakeryData.forEach((item) => {
+  item.image = process.env.PUBLIC_URL + "/" + item.image;
+});
 /* ############################################################## */
 
 // make a prices map from the bakeryData
@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="App flex flex-col items-center h-screen text-neutral-800 min-w-[700px]">
-      <h1 className="text-5xl md:text-7xl text-center p-10 font-bold bg-neutral-50 w-screen fixed whitespace-nowrap">My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
+      <h1 className="text-5xl md:text-7xl text-center p-10 font-bold bg-red-50 w-screen fixed whitespace-nowrap">My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
 
       <div className="p-10 m-10"></div>
 
